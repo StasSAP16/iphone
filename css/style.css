@@ -1,0 +1,22 @@
+.header{
+    background-color: #0A0A0A;
+}
+
+.container{
+    max-width: 1200px;
+    /* поставил container по центру */
+    margin: 0 auto;
+    /*  при уменьшении устройства что бы не прилипал контент к краями */
+    padding: 0 15px;
+
+    background-color: aqua;
+}
+
+.nav{
+    /* делаем nav флексовым элементы станут друг за другом*/
+    display: flex;
+    /* распределяем элементы nav по вертикали */
+    justify-content: space-between;
+    /* распределяем элементы nav по горизонтали */
+    align-items: center;
+}
