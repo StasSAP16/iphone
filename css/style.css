@@ -1,5 +1,31 @@
+a{
+    /* убераем подчеркивания у всех ссылок */
+    text-decoration: none;
+    /* будет брать цвет который указан у родителя ссылки */
+    color: inherit;
+}
+
+ul{
+    /* для всех ul убираем марджины и паддинг и уберем точки(маркир список*/
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    /* line-height: 130%; или 18px */
+    line-height: 18px;
+    font-weight: 400;
+    color: #0a0a0a;
+}
 .header{
     background-color: #0A0A0A;
+    padding: 33px 0 32px;
+    /* даем родителю цвет и от него он будет наследоваться в а в ссылки */
+    color: #717171;
+    font-size: 24px;
+    line-height: 29px;
 }
 
 .container{
@@ -8,8 +34,6 @@
     margin: 0 auto;
     /*  при уменьшении устройства что бы не прилипал контент к краями */
     padding: 0 15px;
-
-    background-color: aqua;
 }
 
 .nav{
@@ -20,3 +44,21 @@
     /* распределяем элементы nav по горизонтали */
     align-items: center;
 }
+
+.menu{
+    display: flex;
+
+}
+.menu-item:not(:last-child){
+    /* здесь еще нужно убрать падинг и крайней правой ссылки! :not(:last-child)*/
+    padding-right: 30px;
+}
+
+/* .menu-link,
+.phone{
+    /* берем из фигмы фонт сайз и высоту */
+    /* font-size: 24px;
+    line-height: 29px; */
+    /* тк все значения в хедере одинаковые и наследуются от него то вырежем
+    их отсюда и зададим их хедеру тк он родитель*/
+/* } */ 
