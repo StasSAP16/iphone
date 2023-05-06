@@ -57,6 +57,8 @@ body{
     flex-grow: 1;
     flex-basis: 0;
     text-align: right;
+    font-size: 24px;
+    line-height: 29px;
 }
 .menu-item:not(:last-child){
     /* здесь еще нужно убрать падинг и крайней правой ссылки! :not(:last-child)*/
@@ -160,4 +162,78 @@ body{
 
 .color-item p{
     margin: 0;
+}
+
+.contacts-inner{
+    display: flex;
+    background-color: #574B63;
+    color: #fff;
+}
+
+.contacts-form{
+    width: 100%;
+    /* было padding: 140px 100px; уменьшили до 93 из за тогго что не влазил шрифт в 1 строку (ипольз и кириллицы и латинницы 1 мы подкл ток кириллицу*/
+    padding: 140px 93px;
+    text-align: center;
+}
+
+.contacts-title{
+    margin: 0 0 60px;
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: left;
+}
+
+.contacts-input{
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #fff;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #574B63;
+}
+
+.contacts-input::placeholder{
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    opacity: .5;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.contacts-form p{
+    opacity: .5;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.contacts-form button{
+    border: none;
+    text-transform: uppercase;
+    color: #490E84;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    padding: 16px 81px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #0A0A0A;
+}
+
+.footer-link{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.footer-inner{
+    color: #717171;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 0;
 }
