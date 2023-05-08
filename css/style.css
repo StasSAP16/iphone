@@ -362,6 +362,7 @@ body{
 
     .menu-open .menu{
         transform: translateY(0%);
+        height: 620px;
     }
 
     .menu-item {
@@ -391,6 +392,16 @@ body{
     }
     .contacts-form{
         padding: 50px 70px;
+    }
+    .headline-btn:hover{
+        /* убираем ховерные эффекты на телефонах */
+        background-color: #490E84;
+        color: #FFFFFF;
+      }
+    .contacts-form button:hover{
+        background-color: #FFFFFF;
+        color: #490E84;
+      
     }
 }
 
