@@ -290,6 +290,16 @@ body{
         width: 50%;
         margin-bottom: 30px;
     }
+    .headline-btn:hover{
+        /* убираем ховерные эффекты на телефонах */
+        background-color: #490E84;
+        color: #FFFFFF;
+      }
+    .contacts-form button:hover{
+        background-color: #FFFFFF;
+        color: #490E84;
+      
+    }
 }
 
 @media(max-width:940px){
@@ -392,16 +402,6 @@ body{
     }
     .contacts-form{
         padding: 50px 70px;
-    }
-    .headline-btn:hover{
-        /* убираем ховерные эффекты на телефонах */
-        background-color: #490E84;
-        color: #FFFFFF;
-      }
-    .contacts-form button:hover{
-        background-color: #FFFFFF;
-        color: #490E84;
-      
     }
 }
 
